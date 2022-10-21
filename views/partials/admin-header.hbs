@@ -1,0 +1,62 @@
+<!-- HEADER -->
+<header>
+    <!-- TOP HEADER -->
+    <div id="top-header">
+        <div class="container">
+            <ul class="header-links pull-left">
+                <li><a href="#"><i class="fa fa-phone"></i>9567555647</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> realme@gmail.com</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> Banglore,karnataka</a></li>
+            </ul>
+            <ul class="header-links pull-right">
+                <li><a href="#">realme(india)-Dare to leap</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /TOP HEADER -->
+
+
+</header>
+<header>
+    <div id="top-header">
+        <div class="container">
+
+            <ul class="header-links main-nav ">
+
+                <div class="header-logo">
+                    <a href="#" class="logo">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <li class="active"><a href="/admin/products">All Products</a></li>
+                <li><a href="#">All Orders</a></li>
+                <li><a href="#">All Users</a></li>
+                {{#if user}}
+                <a href=""><i class="fa fa-user-o"></i> {{user.firstname}}</a>
+
+                {{/if}}
+                </li>
+                {{#if user}}
+                <li>
+                    <a href="/logout"> Logout</a>
+
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login"> Login</a>
+
+                </li>
+                {{/if}}
+
+
+            </ul>
+            <ul class="header-links pull-right">
+                <h1 class="text-primary">ADMIN PANEL</h1>
+
+            </ul>
+        </div>
+    </div>
+    </div>
+</header>

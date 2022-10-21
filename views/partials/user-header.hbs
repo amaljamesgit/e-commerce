@@ -1,0 +1,72 @@
+
+
+
+<!-- HEADER -->
+<header>
+    <!-- TOP HEADER -->
+    <div id="top-header">
+        <div class="container">
+            <ul class="header-links pull-left">
+                <li><a href="#"><i class="fa fa-phone"></i>9567555647</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> realme@gmail.com</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> Banglore,karnataka</a></li>
+            </ul>
+            <ul class="header-links pull-right">
+                <li><a href="#">realme(india)-Dare to leap</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /TOP HEADER -->
+
+
+</header>
+<header>
+    <div id="top-header">
+        <div class="container">
+
+            <ul class="header-links main-nav ">
+
+                <div class="header-logo">
+                    <a href="#" class="logo">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">realme TV</a></li>
+                <li><a href="#">Smart Life</a></li>
+                <li><a href="#">Laptops</a></li>
+                {{#if user}}
+                <li><a href="/orders">Orders</a></li>
+
+
+                {{/if}}
+
+            </ul>
+            <ul class="header-links pull-right">
+                <li> <a class="nav-link text-light" href="/cart"><i class="fa fa-shopping-cart"></i>Cart</a><span
+                            class="badge text-success" id="cart-count">{{cartCount}}</span></li>
+
+                <li>
+                    {{#if user}}
+                    <a href=""><i class="fa fa-user-o"></i> {{user.firstname}}</a>
+
+                    {{/if}}
+                </li>
+                {{#if user}}
+                <li>
+                    <a href="/logout"> Logout</a>
+
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login"> Login</a>
+
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+    </div>
+</header>
